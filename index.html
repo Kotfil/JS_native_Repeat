@@ -7,30 +7,120 @@
 </head>
 <body>
 <script>
-    let badNum = "3" + 3;
-    console.log(badNum);
+    // let badNum = "3" + 3;
+    // console.log(badNum);
+    //
+    // let undef = undefined;
+    // //arr
+    //
+    // let arr = ['yo', 415, true];
+    // console.log(arr[0]);
+    // arr.push('hey');
+    // console.log(arr);
+    //
+    // //obj
+    // let party = {
+    //     vlad: "bread",
+    //     sasha: "olive",
+    //     anton: "beer"
+    //
+    // }
+    //
+    // let party2 = party;
+    //
+    //     party2.vlad = "dry_fish";
+    // console.log(party2);
+    // console.log(party);
 
-    let undef = undefined;
-    //arr
+    //Arrays
 
-    let arr = ['yo', 415, true];
-    console.log(arr[0]);
-    arr.push('hey');
-    console.log(arr);
+    let arrNum = [1, 2, 3, 4];
+    let arrStr = [];
 
-    //obj
-    let party = {
-        vlad: "bread",
-        sasha: "olive",
-        anton: "beer"
-
+    for (let i = 0; i < arrNum.length; i++) {
+        arrStr.push(arrNum[i].toString());
     }
 
-    let party2 = party;
+    arrStr = arrNum.map(es => es.toString());
+    console.log(arrStr);
 
-        party2.vlad = "dry_fish";
-    console.log(party2);
-    console.log(party);
+
+    let names = ['andrey', 'vasia', 'kirill'];
+    let namesCapLetter = [];
+
+    namesCapLetter = names.map(name => {
+        return (
+            `${name[0].toUpperCase()} ${name.substring(1)}`
+        );
+    })
+    console.log(namesCapLetter);
+
+    let myNames = ['Andrey', 'Vasja', 'Kirill'];
+    let persons = [];
+
+    persons = myNames.map(name => ({name}))
+    console.log(persons);
+
+
+    let friendsNames = ['Andrey', 'Vasja', 'Kirill'];
+    let friendsAges = [23, 30, 25];
+    let friends = [];
+
+    friends = friendsNames.map((name, i) => ({name: name, age: friendsAges[i]}))
+    console.log(friends);
+
+    let students = [{name: 'Alex', age: 23}, {name: 'John', age: 32}, {name: 'Helga', age: 20}]
+    let ages = [];
+
+    ages = students.map(s => s.age);
+    console.log(ages);
+
+    let oldArray = [23, 5, null, true, 'Bob', [], {}];
+    let newArray = [];
+
+    newArray = oldArray.map(el => {
+        let result;
+        switch (typeof el) {
+            case "number":
+                result = {age: el}
+                break;
+            case "string":
+                result = el.toUpperCase();
+                break;
+
+            default:
+                result = "not a number or a string";
+                break;
+        }
+        return result;
+    });
+
+    console.log(newArray);
+
+    let myNumbers = [1,2,3,4];
+    let myBigNumbers = [];
+
+    myBigNumbers = myNumbers.filter(num => num > 2)
+
+    console.log(myBigNumbers);
+
+    let words = ['run', 'execution', 'let', 'function', 'const'];
+    let longWords = [];
+
+    long = words.filter(w => w.length > 5)
+
+    console.log(longWords);
+    console.log(words);
+
+    let arr = ['function', 23, null, 'object', 55, 'null', true, undefined]
+    let filtredArr = [];
+
+    filtredArr = arr.filter(el => typeof el === "number" ||
+    typeof el === "string")
+
+    console.log (filtredArr);
+
+
 
 </script>
 
