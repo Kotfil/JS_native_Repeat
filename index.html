@@ -34,94 +34,118 @@
 
     //Arrays
 
-    let arrNum = [1, 2, 3, 4];
-    let arrStr = [];
+    // let arrNum = [1, 2, 3, 4];
+    // let arrStr = [];
 
-    for (let i = 0; i < arrNum.length; i++) {
-        arrStr.push(arrNum[i].toString());
-    }
+    // for (let i = 0; i < arrNum.length; i++) {
+    //     arrStr.push(arrNum[i].toString());
+    // }
 
-    arrStr = arrNum.map(es => es.toString());
-    console.log(arrStr);
-
-
-    let names = ['andrey', 'vasia', 'kirill'];
-    let namesCapLetter = [];
-
-    namesCapLetter = names.map(name => {
-        return (
-            `${name[0].toUpperCase()} ${name.substring(1)}`
-        );
-    })
-    console.log(namesCapLetter);
-
-    let myNames = ['Andrey', 'Vasja', 'Kirill'];
-    let persons = [];
-
-    persons = myNames.map(name => ({name}))
-    console.log(persons);
+    // arrStr = arrNum.map(es => es.toString());
+    // console.log(arrStr);
 
 
-    let friendsNames = ['Andrey', 'Vasja', 'Kirill'];
-    let friendsAges = [23, 30, 25];
-    let friends = [];
+    // let names = ['andrey', 'vasia', 'kirill'];
+    // let namesCapLetter = [];
 
-    friends = friendsNames.map((name, i) => ({name: name, age: friendsAges[i]}))
-    console.log(friends);
+    // namesCapLetter = names.map(name => {
+    //     return (
+    //         `${name[0].toUpperCase()} ${name.substring(1)}`
+    //     );
+    // })
+    // console.log(namesCapLetter);
 
-    let students = [{name: 'Alex', age: 23}, {name: 'John', age: 32}, {name: 'Helga', age: 20}]
-    let ages = [];
+    // let myNames = ['Andrey', 'Vasja', 'Kirill'];
+    // let persons = [];
 
-    ages = students.map(s => s.age);
-    console.log(ages);
-
-    let oldArray = [23, 5, null, true, 'Bob', [], {}];
-    let newArray = [];
-
-    newArray = oldArray.map(el => {
-        let result;
-        switch (typeof el) {
-            case "number":
-                result = {age: el}
-                break;
-            case "string":
-                result = el.toUpperCase();
-                break;
-
-            default:
-                result = "not a number or a string";
-                break;
-        }
-        return result;
-    });
-
-    console.log(newArray);
-
-    let myNumbers = [1,2,3,4];
-    let myBigNumbers = [];
-
-    myBigNumbers = myNumbers.filter(num => num > 2)
-
-    console.log(myBigNumbers);
-
-    let words = ['run', 'execution', 'let', 'function', 'const'];
-    let longWords = [];
-
-    long = words.filter(w => w.length > 5)
-
-    console.log(longWords);
-    console.log(words);
-
-    let arr = ['function', 23, null, 'object', 55, 'null', true, undefined]
-    let filtredArr = [];
-
-    filtredArr = arr.filter(el => typeof el === "number" ||
-    typeof el === "string")
-
-    console.log (filtredArr);
+    // persons = myNames.map(name => ({name}))
+    // console.log(persons);
 
 
+    // let friendsNames = ['Andrey', 'Vasja', 'Kirill'];
+    // let friendsAges = [23, 30, 25];
+    // let friends = [];
 
+    // friends = friendsNames.map((name, i) => ({name: name, age: friendsAges[i]}))
+    // console.log(friends);
+
+    // let students = [{name: 'Alex', age: 23}, {name: 'John', age: 32}, {name: 'Helga', age: 20}]
+    // let ages = [];
+
+    // ages = students.map(s => s.age);
+    // console.log(ages);
+
+    // let oldArray = [23, 5, null, true, 'Bob', [], {}];
+    // let newArray = [];
+
+    // newArray = oldArray.map(el => {
+    //     let result;
+    //     switch (typeof el) {
+    //         case "number":
+    //             result = {age: el}
+    //             break;
+    //         case "string":
+    //             result = el.toUpperCase();
+    //             break;
+
+    //         default:
+    //             result = "not a number or a string";
+    //             break;
+    //     }
+    //     return result;
+    // });
+
+    // console.log(newArray);
+
+    // let myNumbers = [1,2,3,4];
+    // let myBigNumbers = [];
+
+    // myBigNumbers = myNumbers.filter(num => num > 2)
+
+    // console.log(myBigNumbers);
+
+    // let words = ['run', 'execution', 'let', 'function', 'const'];
+    // let longWords = [];
+
+    // long = words.filter(w => w.length > 5)
+
+    // console.log(longWords);
+    // console.log(words);
+
+    // let arr = ['function', 23, null, 'object', 55, 'null', true, undefined]
+    // let filtredArr = [];
+
+    // filtredArr = arr.filter(el => typeof el === "number" ||
+    // typeof el === "string")
+
+    // console.log (filtredArr);
+    // var items = ['shoes', 'shirts', 'socks', 'sweaters'];
+    // items.length;   
+    // console.log(items);
+
+//     let numbers = [1, 2, 3, 4, 5];
+
+//    for (var i = 0; i < numbers.length; i++) {
+//   numbers[i] + 2;
+//     console.log(numbers);
+
+// console.log(Array.from('foo'));
+
+// const array1 = ['a', 'b', 'c'];
+// const array2 = ['d', 'e', 'f'];
+// const array3 = array1.concat(array2);
+
+// console.log(array3);
+
+// const words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];
+
+// const result = words.filter(word => word.length > 6);
+
+// console.log(result);
+
+let arr2 = [1, 2, [3, 4, [5, 6]]];
+fw
+console.log(arr2);
 </script>
 
 </body>
