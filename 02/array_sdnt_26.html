@@ -8,17 +8,23 @@
     let arrNum = [1, 2, 3, 4];
     let arrStr = [];
 
-    // Код пишем здесь!!!
-    for (let i = 0; i < arrNum.length; i++) {
-    arrStr.push(arrNum[i].toString())
-    }
+    // // Код пишем здесь!!!
+    // for (let i = 0; i < arrNum.length; i++) {
+    //
+    // }
+    // for (let i = 0; i < arrNum.length; i++) {
+    //     arrStr.push(arrNum[i].toString());
+    // }
+
+    arrStr = arrNum.map(number => number.toString());
+
     // for (let i = 0; i < arrNum.length; i++) {
     //     arrStr.push(arrNum[i].toString());
     // }
 
     arrStr = arrNum.map(number => number.toString());
     console.log(arrStr);
-    
+
     // 2.Преобразовать массив строк в массив строк с верхним регистром.
     // Используем метод String.prototype.toUpperCase().
     //https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase
@@ -41,10 +47,9 @@
     namesCapLetter = names.map(name => {
         return (
             `${name[0].toUpperCase()}${name.substring(1)}.`
-        )
+        );
     })
     console.log(namesCapLetter);
-
     // 4.Преобразовать массив строк в массив объектов:
     // [{ name: ‘Andrey’ }, { name: ‘Vasja’ },{ name: ‘Kirill’ }].
 
@@ -52,8 +57,8 @@
     let persons = [];
 
     // Код пишем здесь!!!
-    persons = myNames.map(name => ({ name }))
-    console.log(persons);
+    // persons = myNames.map((name => ({ name }))
+    // console.log(persons);
 
     // 5.Есть массив имен и есть массив возрастов.
     // Каждый индекс имени совпадает с индексом возраста.
@@ -65,20 +70,23 @@
     let friends = [];
 
     // Код пишем здесь!!!
-    friends = friendsNames.map((name, i ) =>({name: name, age: friendsAges[i]}))
+    friends = friendsNames.map((name, i) => ({name: name, age: friendsAges[i]}))
     console.log(friends);
+
 
     // 6.Преобразовать массив объектов в массив чисел, элементами которого
     // будут числа (значения возрастов из объектов).
 
-    let students = [{name: 'Alex', age: 23}, {name: 'John', age: 32}, {name:'Helga',age: 20}]
+    let students = [{name: 'Alex', age: 23}, {name: 'John', age: 32}, {name: 'Helga', age: 20}]
     let ages = [];
 
     // Код пишем здесь!!!
+    // ages = students.map(s => s.age);
+    // console.log(ages);
     ages = students.map(s => s.age);
     console.log(ages);
 
-    // 7.Требуется преобразовать исходный массив в массив, элементы которого будут: 
+    // 7.Требуется преобразовать исходный массив в массив, элементы которого будут:
     // - если исходный элемент  - число, то новый элемент будет объектом в виде {age: 23}; 
     // - если строка, то в новом массиве элемент будет той же строкой в верхнем регистре;
     // - в остальных случаях элементы преобразуются в строку ‘not a number or a string’.
@@ -88,28 +96,32 @@
 
     // Код пишем здесь!!!
     newArray = oldArray.map(el => {
+        let result;
         switch (typeof el) {
             case "number":
-                return {age: el};
+                result = {age: el}
+                break;
             case "string":
-                return el.toUpperCase();
+                result = el.toUpperCase()
+                break;
             default:
-                return "not a number or a string";
+                result = "not a number or a string";
+                break;
         }
+        return result;
     })
-
     console.log(newArray);
 
     // !!!Используем метод массивов 'filter'!!!
 
     // 8. Создайте новый массив с элементами из исходного массива, которые больше  2. 
-    
+
     let myNumbers = [1, 2, 3, 4];
     let myBigNumbers = [];
 
     // Код пишем здесь!!!
     myBigNumbers = myNumbers.filter(num => {
-        let result = num > 2; 
+            let result = num > 2;
             return result;
         }
     )
@@ -118,10 +130,10 @@
     // 9.Создайте новый массив совершеннолетних пользователей.
 
     let users = [
-       { age: 11, name: 'Vasja' },
-       { age: 13, name: 'Ivan' },
-       { age: 18, name: 'Katya' },
-       { age: 23, name: 'Andrey' }
+        {age: 11, name: 'Vasja'},
+        {age: 13, name: 'Ivan'},
+        {age: 18, name: 'Katya'},
+        {age: 23, name: 'Andrey'}
     ];
     let oldUsers = [];
 
@@ -147,7 +159,7 @@
 
     // Код пишем здесь!!!
     // filtredArr = arr.filter(el => typeof el === "number" || typeof el === "string")
-    filtredArr = arr.filter(el => ["number","string"].includes(typeof el));
+    filtredArr = arr.filter(el => ["number", "string"].includes(typeof el));
 
     console.log(filtredArr)
 
@@ -165,42 +177,33 @@
     // Используйте метод массивов 'reduce'.
     // https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce
 
-    let arrTоSum = [1, 2, 3, 4, 5, 6];
-    let sum;
-    // Самодельный reduce:
-    Array.prototype.myReduce = function (callback, acc = 0) {
-        for(let i = 0 ; i < this.length; i++) {
-            acc = callback(acc, this[i]);
-        }
-        return acc;
-    };
-
-    // Код пишем здесь!!!
-    sum = arrTоSum.reduce((s, el) => s + el, 0)
-    console.log(sum);
+    // let arrTоSum = [1, 2, 3, 4, 5, 6];
+    // let sum;
+    // // Самодельный reduce:
+    // Array.prototype.myReduce = function (callback, acc = 0) {
+    //     for (let i = 0; i < this.length; i++) {
+    //         acc = callback(acc, this[i]);
+    //     }
+    //     return acc;
+    // };
+    //
+    // // Код пишем здесь!!!
+    // sum = arrTоSum.reduce((s, el) => s + el, 0)
+    // console.log(sum);
 
     // 14.Создайте функцию "average", которая    принимает массив из чисел и возвращает среднее арифметическое значение элементов массива.
 
     let array = [1, 2, 3, 4, 5, 6];
     let average = (arr) => {
-        return arr.reduce((s, el) => s + el, 0)/arr.length
+        return arr.reduce((s, el) => s + el, 0) / arr.length
     };
-        
+
     console.log(average(array));
 
     //15.Дан произвольный массив из чисел. Напишите функцию, которая возвращает максимальное значение из массива. Подумайте, каким ещё способом это мложно сделать?
     // Это домашка!!!!! 
     // Посмотреть метод "sort";
     // Всё сделал? Красавчик! :))))) 
-
-
-
-
-
-
-
-
-
 
 
 </script>
