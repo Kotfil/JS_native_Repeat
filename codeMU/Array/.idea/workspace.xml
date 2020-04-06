@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="18423889-38ef-4a9c-a2aa-6e43343a33fb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test.html" beforeDir="false" afterPath="$PROJECT_DIR$/../test.html" afterDir="false" />
-    </list>
+    <list default="true" id="43809514-9d8e-4e19-9600-364053cc7a2e" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,13 +9,15 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="ProjectId" id="1aAdbL2YVwjT2NWa6JYov8pRhRt" />
+  <component name="ProjectId" id="1a50uKoAvYbyChZvvxJ9E706FNb" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Func" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -37,13 +36,28 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="18423889-38ef-4a9c-a2aa-6e43343a33fb" name="Default Changelist" comment="" />
-      <created>1586182402687</created>
+      <changelist id="43809514-9d8e-4e19-9600-364053cc7a2e" name="Default Changelist" comment="" />
+      <created>1586010368964</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1586182402687</updated>
-      <workItem from="1586182404072" duration="647000" />
+      <updated>1586010368964</updated>
+      <workItem from="1586010370124" duration="3026000" />
     </task>
+    <task id="LOCAL-00001" summary="ZP">
+      <created>1586010490613</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1586010490613</updated>
+    </task>
+    <task id="LOCAL-00002" summary="03">
+      <created>1586016776486</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1586016776486</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -59,5 +73,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="ZP" />
+    <MESSAGE value="03" />
+    <option name="LAST_COMMIT_MESSAGE" value="03" />
   </component>
 </project>

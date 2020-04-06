@@ -1,0 +1,112 @@
+<script>
+    // 01 theory
+    // Создание переменных и типы данных
+    const name = 'Viktor';
+    const age = 33;
+    const notNumberAge = "33";
+    // разница между let и const
+    let isStudent = true;
+    isStudent = false;
+    // создание массивов и объектов с помощью литерала
+    const numbers = ['+3753332323', '+3753323232323'];
+    const student = {
+        name: 'Olga',
+        isStudent: true,
+        age: 18
+    }
+    const friends = [
+        { name: 'Viktor', isStudent: false, age: 33 },
+        { name: 'Dimych', isStudent: false, age: 32 },
+        student
+    ]
+    // создание стрелочной функции 
+    const myFunc = (a, b) => {
+        return a > b ? "Первое больше" : "Первое меньше";
+    }
+
+    console.log(name);
+    console.log(age);
+    console.log(notNumberAge);
+    console.log(isStudent);
+    console.log(student.name);
+    console.log(student.age);
+    console.log(friends[1].name);
+    console.log(friends[2].age);
+
+    // 01 task
+    // создайте объект Garage, у которого будет сво-ва:
+    // имя владельца
+    // массив, в котором сидяит минимум 3 объекта Auto. У каждого автомобиля есть 
+    // название, цвет, на_ремонте_ли_она
+
+    // Отобразите в консоли названия всех автомобилей из гаража
+    class ClassRoom {
+        // новый объект this={};
+        // св-во нового объекта 
+        groupNumber = "КМБ 27";
+
+        // св-во нового объекта
+        friends = [
+            { name: 'Viktor', isStudent: false, age: 33 },
+            { name: 'Dimych', isStudent: false, age: 32 },
+            student
+        ];
+
+        // метод нового объекта
+        renderStudentsNames = () => {
+            console.log(this.friends[0].name);
+            console.log(this.friends[1].name);
+            console.log(this.friends[2].name);
+        }
+    }
+    const classroom = new ClassRoom();
+    classroom.renderStudentsNames();
+
+// 02 task
+// создайте по аналогии класс Garage с нужными св-вами (какие были раньше) и с автомобилями внутри
+
+
+class ClassRoomNew {
+        // новый объект
+        constructor(mentor){
+            this.props = {},
+            this.props.name = mentor.name
+            this.props.age = mentor.age
+        }
+        // св-во нового объекта
+        groupNumber = "КМБ 27";
+
+        // св-во нового объекта
+        friends = [
+            { name: 'Viktor', isStudent: false, age: 33 },
+            { name: 'Dimych', isStudent: false, age: 32 },
+            student
+        ];
+
+        // "гибкий" метод как у всех объектов класса ClassRoomNew
+        renderStudentsNames = () => {
+            console.log(this.friends.map(f => {
+                return f.name;
+            }))
+        }
+        // метод как у всех объектов класса ClassRoomNew
+        getMentorGreeting = () => {
+            console.log(`Hi! My name is ${this.props.name}. I'm mentor of ${this.groupNumber} group. I'm ${this.props.age}`);
+        }
+    }
+    const myClassRoom = new ClassRoomNew({ name: 'Dimych', isStudent: false, age: 32 });
+    console.log(myClassRoom.renderStudentsNames());
+    myClassRoom.getMentorGreeting();
+
+    // 03 task 
+    // создайте по аналогии класс GarageCool c "гибким" методом render, с возможностью при создании передавать в GarageCool сведения о владельце и с методом getOwnerInfo, который будет выводить в консоль сведения о владельце гаража.
+ 
+
+
+    // 04 
+    const name1 = true ? "Dima" : "Viktor";
+    const name2 = false ? "Dima" : "Viktor";
+
+    const age1 =  name === "Dima" ? 32 : 33;
+    const age2 =  name === "Dima" ? 32 : 33;
+</script>
