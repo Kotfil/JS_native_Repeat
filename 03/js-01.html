@@ -7,6 +7,7 @@
     // разница между let и const
     let isStudent = true;
     isStudent = false;
+
     // создание массивов и объектов с помощью литерала
     const numbers = ['+3753332323', '+3753323232323'];
     const student = {
@@ -20,18 +21,27 @@
         student
     ]
     // создание стрелочной функции 
-    const myFunc = (a, b) => {
-        return a > b ? "Первое больше" : "Первое меньше";
-    }
+    const myFunc = (a, b) => a < b ? "Первое больше" : "Первое меньше";
 
-    console.log(name);
+    console.log(myFunc(5,6));
     console.log(age);
     console.log(notNumberAge);
     console.log(isStudent);
     console.log(student.name);
     console.log(student.age);
-    console.log(friends[1].name);
+    console.log(friends[0].name);
     console.log(friends[2].age);
+
+    let garage = {
+        owner: "Viktor",
+      cars :
+          [
+              {model:'Vaz',color: 'red', isInService: 'false' },
+              {model:'Skoda',color: 'grey', isInService: 'false' },
+              {model:'Lanos',color: 'green', isInService: 'true' }
+          ]
+    };
+    console.log(garage);
 
     // 01 task
     // создайте объект Garage, у которого будет сво-ва:
@@ -63,6 +73,27 @@
     classroom.renderStudentsNames();
 
 // 02 task
+    class Faster {
+        groupNumber = '1';
+
+        strike = [
+            {name: "Vitya", age: 50},
+            {name: "Olya", age: 25},
+            {name: "Vika", age: 35},
+            {name: "Sonya", age: 42}
+
+        ];
+
+        renderNamesStrike = () => {
+            console.log(this.strike[0])
+            console.log(this.strike[1])
+            console.log(this.strike[2])
+            console.log(this.strike[3])
+        }
+    }
+    const people = new Faster();
+    console.log(people);
+    people.renderNamesStrike();
 // создайте по аналогии класс Garage с нужными св-вами (какие были раньше) и с автомобилями внутри
 
 
