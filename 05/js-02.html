@@ -1,0 +1,138 @@
+<!--<button id="ok_btn">ok</button>-->
+<!--<button id="cancel_btn">cancel</button>-->
+<!--<input type="text"/>-->
+
+<!--    const okBtn = document.getElementById("ok_btn");-->
+<!--    const myInput = document.querySelectorAll("input");-->
+<!--    const dellBut = document.getElementById("cancel_btn");-->
+<!--    const onOkClickFunc = () => {-->
+<!--        alert(myInput[0].value);-->
+<!--    }-->
+
+<!--    console.log(onOkClickFunc);-->
+
+
+<script>
+
+
+    // }
+    //
+    // okBtn.onclick = onOkClickFunc;
+    // cancelBtn.onclick = onCancelFunc;
+    // task 01: добавить новый обработчик на клик для кнопки cancel, который будет очищать инпут от предыдущего ввода
+
+
+    //     const everySecondTick = () => {
+    //         console.log('tick every second');
+    //     }
+    //
+    //     setInterval(everySecondTick, 1000);
+    //
+    //     // task 02: создать новую функцию и закинуть её как колбэк в функцию setTimeout
+    // const gello = () => {
+    //     console.log('Hi all =)');
+    // }
+    //
+    // setInterval(gello,10000);
+
+    // const numbers = [1, 2, 3, 4];
+    // const cop = [...numbers, 5];
+    // console.log(numbers);
+    // console.log(cop);
+
+    // task 03: получить массив  [1, 2, 3, 4, 5] не изменяя исходный массив,
+    // // т.е. иммютабельно
+    // const numbersWith5 = [...numbers, 5];
+
+    // const names = ["Dimych", "Sveta", "Valera"];
+    // // task 04: иммьютабельно получить массив ["Viktor", "Dimych", "Sveta", "Valera"]
+    // const namesPlus = ["victor"...names];
+    // console.log(names);
+
+
+    // const user = {
+    //     name: "Dimych",
+    //     age: 32
+    // }
+    // task 05: создать копию объекта, значение св-ва 'age' поменять на 33 
+    // т.е.иммьютабельно
+    // const userCopy = {...user, age: 33}
+    //
+    // // task 06: изменить иммьютабельно в студенте номер урока на 22
+    // const student = {
+    //     lesson: 15,
+    //     stack: ["css", "js", "html"]
+    // }
+    // const dwww = {lesson: 22};
+    // console.log(dwww);
+    //
+    // const studentCopy = {}
+
+    // task 07: нужно в таске в подобъекте data изменить level на "low"
+    // const task = {
+    //     title: "learn react",
+    //     data: {
+    //         createdBy: "Dimych",
+    //         level: "important",
+    //     }
+    // }
+    // const tasks = {
+    //     ...task,data: {
+    //         ...task.data,level: "low"
+    //     }
+    // }
+    // console.log(tasks);
+    //
+    // // решение
+    // const taskCopy = {
+    //     ...task,
+    //     data: {
+    //         ...task.data,
+    //         level: "low"
+    //     }
+    // }
+
+    // task 08:
+    // нужно иммьютабельно изменить todolist, добавив в него "react"
+    // const todolist = {
+    //     title: "development",
+    //     author: "Viktor",
+    //     tasks: ["css", "js", "html"]
+    // }
+    //
+    // const newTodolist = {}
+
+    // Ещё один способ создания копии массива
+
+    // let usersCopy = [...users];
+    // // !!!!!! =>
+    // let usersCopy2 = users.map(user => {
+    //     return user
+    // });
+
+    // к тому же, map позволяет в процессе итерации иммутабельно обновить один из объектов:
+    //
+    // let usersUpdateCopy1 = users.map(u => {
+    //     if (u.id === 3) {
+    //         return {
+    //             ...u,
+    //             name: "katyaSuperman"
+    //         }
+    //     } else {
+    //         return u;
+    //     }
+    // });
+    // тоже самое, но с помощью тернарки и без фигурных скобок в стрелочно функции
+
+
+let users = [
+{id: 1, name: "dima"},
+{id: 2, name: "viktor"},
+{id: 3, name: "katya"}
+]
+
+    let usersUpdateCopy2 = users
+        .map(u => u.id === 2 ? {...u, name: "viktorSuperman"} : u);
+
+
+</script>
