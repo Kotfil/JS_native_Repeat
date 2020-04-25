@@ -1,24 +1,26 @@
-<!--<button id="ok_btn">ok</button>-->
-<!--<button id="cancel_btn">cancel</button>-->
-<!--<input type="text"/>-->
+<button id="ok_btn">ok</button>
+<button id="cancel_btn">cancel</button>
+<input type="text"/>
 
-<!--    const okBtn = document.getElementById("ok_btn");-->
-<!--    const myInput = document.querySelectorAll("input");-->
-<!--    const dellBut = document.getElementById("cancel_btn");-->
-<!--    const onOkClickFunc = () => {-->
-<!--        alert(myInput[0].value);-->
-<!--    }-->
 
-<!--    console.log(onOkClickFunc);-->
 
 
 <script>
+    const okBtn = document.getElementById("ok_btn");
+    const myInput = document.querySelectorAll("input");
+    const dellBut = document.getElementById("cancel_btn");
+    const onOkClickFunc = () => {
+        alert(myInput[0].value);
+
+    };
+    const onCancelFunc = () => {
+        (myInput[0].value = '');
 
 
-    // }
-    //
-    // okBtn.onclick = onOkClickFunc;
-    // cancelBtn.onclick = onCancelFunc;
+    }
+
+    okBtn.onclick = onOkClickFunc;
+    dellBut.onclick = onCancelFunc;
     // task 01: добавить новый обработчик на клик для кнопки cancel, который будет очищать инпут от предыдущего ввода
 
 
