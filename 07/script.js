@@ -14,8 +14,15 @@ let a = {
 
 let b = {...a};
 
-a.name = 'Blabla';
-a.isOnline = true;
-a.classroom.teather = 'Dmitiy';
-a.students.push('Vasilij')
-console.log (a);
+// a.name = 'Blabla';
+// a.isOnline = true;
+// a.classroom.teather = 'Dmitiy';
+// a.students.push('Vasilij')
+
+
+
+b.name = '21333'
+// console.log (a);
+b.students.shift('Vadim')
+b.students.unshift('Vlad')
+console.log (b);
