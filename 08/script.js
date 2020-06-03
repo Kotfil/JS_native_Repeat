@@ -1,4 +1,5 @@
-// let arr1 = ['Semen','Vitalik','Sasha','Alena','Igor'];
+// let arr1 = ['Semen','Vitalik'
+// ,'Sasha','Alena','Igor'];
 //
 // let arr2 = arr1.map((e) => {
 //     if (arr3(el)) {
@@ -27,8 +28,31 @@
 // q = document.getElementById(1);
 // w = document.getElementById(2);
 
-console.log('Hello')
+// console.log('Hello')
 
 
+// let arr = [89,22,45,213,44,554,23,44,32];
+//
+// let max = arr[0]
+//
+// for (i = 0; i < arr.length; i++) {
+//     if(arr[i] >= max ) {
+//         max = arr[i];
+//         console.log('Setting max to ' + max);
+//     }
+// }
+//
+// console.log(max)
 
+
+function add(arr) {
+    return console.log(arr.toString())
+}
+add([89,22,45,213,44,554,23,44,32])
+
+f = document.getElementById('3')
+
+dd = () => {
+    alert('Hello my name is Filipp, i am front end developer')
+}
 
