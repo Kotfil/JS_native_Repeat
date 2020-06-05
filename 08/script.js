@@ -45,14 +45,30 @@
 // console.log(max)
 
 
-function add(arr) {
-    return console.log(arr.toString())
+// function add(arr) {
+//     return console.log(arr.toString())
+// }
+// add([89,22,45,213,44,554,23,44,32])
+//
+// f = document.getElementById('3')
+//
+// dd = () => {
+//     alert('Hello my name is Filipp, i am front end developer')
+// }
+
+// function divisible(num) {
+//     return !num % 100 === 0;
+// }
+// console.log(divisible())
+//
+//
+//  concatName = (firstName, lastName) => {
+//
+// }
+// console.log(concatName(lastName.concat(' ',firstName))
+
+function convert(minutes) {
+    return minutes / 60
 }
-add([89,22,45,213,44,554,23,44,32])
 
-f = document.getElementById('3')
-
-dd = () => {
-    alert('Hello my name is Filipp, i am front end developer')
-}
-
+console.log(convert(2))
