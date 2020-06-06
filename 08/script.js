@@ -66,9 +66,25 @@
 //
 // }
 // console.log(concatName(lastName.concat(' ',firstName))
+//
+// function convert(minutes) {
+//     return minutes / 60
+// }
+//
+// console.log(convert(2))
 
-function convert(minutes) {
-    return minutes / 60
+let a = {
+    name: 'fil',
+    age:70,
+    names: ['Vika','Filya'],
+    dw: {
+        ages: 90
+    }
 }
 
-console.log(convert(2))
+
+let b = {...a};
+b.names.push('Vika')
+b.dw.ages = 95
+b.name = 'SsSSS'
+console.log(a)
