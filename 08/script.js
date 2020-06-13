@@ -73,18 +73,34 @@
 //
 // console.log(convert(2))
 
-let a = {
-    name: 'fil',
-    age:70,
-    names: ['Vika','Filya'],
-    dw: {
-        ages: 90
-    }
-}
+// let a = {
+//     name: 'fil',
+//     age:70,
+//     names: ['Vika','Filya'],
+//     dw: {
+//         ages: 90
+//     }
+// }
+//
+//
+// let b = {...a};
+// b.names.push('Vika')
+// b.dw.ages = 95
+// b.name = 'SsSSS'
+// console.log(a)
 
+// function middleCharacter(txt){
+//     let textLength = txt.length;
+//
+//     let mid = Math.round(textLength / 2)
+//
+//     return txt[mid -1];
+// }
+//
+// console.log(middleCharacter("Andrey"))
 
-let b = {...a};
-b.names.push('Vika')
-b.dw.ages = 95
-b.name = 'SsSSS'
-console.log(a)
+// let name = 15;
+// let user  = {
+//     name
+// }
+// alert(user.name)
