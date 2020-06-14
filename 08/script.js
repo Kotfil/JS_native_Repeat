@@ -111,3 +111,31 @@
 // city.name('Town')
 //
 // console.log(cityFacts)
+//
+// function moodToday(mood="neutral") {
+//     return "Today, I am feeling " + mood
+// }
+// console.log(moodToday());
+//
+// let a = (num) => {
+//     return num % 2
+// }
+//
+// console.log(a(12))
+//
+// function isEvenOrOdd(num) {
+//     if (num % 2) {
+//         return 'even'
+//     } else {
+//     return 'odd'
+//     }
+// }
+//
+// console.log(isEvenOrOdd(49))
+
+// const user = { name: "John", email: "john@example.com",city: "Phoenix", state: "AZ", country: "USA"}
+// const str = `({ name, email, rest} = user ).toString()`
+function yeah_nope(bool) {
+    return bool ? "yeah" : "nope"
+}
+console.log(yeah_nope(true))
